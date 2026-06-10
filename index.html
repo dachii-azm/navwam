@@ -2,29 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="E3VS-Bench"/>
-  <meta property="og:description" content="Project Page for E3VS-Bench"/>
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="NavWAM: A Navigation World Action Model that turns navigation world-model prediction into an action-producing policy for goal-conditioned visual navigation.">
+  <meta property="og:title" content="NavWAM: A Navigation World Action Model"/>
+  <meta property="og:description" content="Project page for NavWAM, a diffusion-transformer policy that jointly predicts future observations, goal-progress values, and executable action chunks for goal-conditioned visual navigation."/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <!-- Path to banner image, optimal dimensions are 1200x630 -->
+  <meta property="og:image" content="static/figures/navwam/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="NavWAM: A Navigation World Action Model">
+  <meta name="twitter:description" content="A navigation world action model for goal-conditioned visual navigation without CEM-style test-time planning.">
+  <meta name="twitter:image" content="static/figures/navwam/teaser.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Visual Navigation, World Model, World Action Model, Diffusion Policy, Image-Goal Navigation, Robot Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes</title>
+  <title>NavWAM: A Navigation World Action Model for Goal-Conditioned Visual Navigation</title>
   <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -51,27 +49,26 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h1 class="title is-2 publication-title" style="font-size: 2.4rem;">E3VS-Bench: A Benchmark for Viewpoint-Dependent <br>Active Perception in 3D Gaussian Splatting Scenes</h1>
+        <h1 class="title is-2 publication-title" style="font-size: 2.4rem;">NavWAM: A Navigation World Action Model <br>for Goal-Conditioned Visual Navigation</h1>
         <div class="is-size-5 publication-authors">
-          <!-- Paper authors -->
           <span class="author-block">
-            <a href="https://k0uya.github.io/">Koya Sakamoto</a><sup>1</sup>,
+            <a href="https://dachii-azm.github.io/">Daichi Azuma</a><sup>1</sup>,
           </span>
           <span class="author-block">
             <a href="https://miyatai.org/">Taiki Miyanishi</a><sup>1</sup>,
           </span>
           <span class="author-block">
-            <a href="https://dachii-azm.github.io/">Daichi Azuma</a><sup>1</sup>,
+            <a href="https://k0uya.github.io/">Koya Sakamoto</a><sup>1</sup>,
           </span>
           <span class="author-block">
             <a href="https://shuheikurita.github.io/">Shuhei Kurita</a><sup>2</sup>,
           </span>
           <br>
           <span class="author-block">
-            <a>Shu Morikuni</a><sup>1</sup>,
+            <a>Yaonan Zhu</a><sup>1</sup>,
           </span>
           <span class="author-block">
-            <a href="https://sites.google.com/view/n-chiba-">Naoya Chiba</a><sup>3</sup>,
+            <a>Petr Khrapchenkov</a><sup>3</sup>,
           </span>
           <span class="author-block">
             <a href="https://bicr.atr.jp/~kawanabe/">Motoaki Kawanabe</a><sup>4</sup>,
@@ -85,43 +82,35 @@
         </div>
 
         <div class="is-size-5 publication-authors">
-          <span class="author-block"></span><sup>1</sup>The University of Tokyo,</span>
-          <span class="author-block"></span><sup>2</sup>NII,</span>
-          <span class="author-block"></span><sup>3</sup>The University of Osaka,</span>
-          <span class="author-block"></span><sup>4</sup>ATR,</span>
+          <span class="author-block"><sup>1</sup>The University of Tokyo,</span>
+          <span class="author-block"><sup>2</sup>NII,</span>
+          <span class="author-block"><sup>3</sup>AIRoA,</span>
+          <span class="author-block"><sup>4</sup>ATR</span>
         </div>
 
         <div class="column has-text-centered">
           <div class="publication-links">
-            <!-- Arxiv PDF link -->
+            <!-- Arxiv PDF link. TODO: replace placeholder URL. -->
             <span class="link-block">
-              <a href="http://arxiv.org/abs/2604.17969" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
                 </span>
                 <span>Paper</span>
               </a>
             </span>
-                
+
             &nbsp;&nbsp;&nbsp;&nbsp;
 
-            <!-- Github link -->
+            <!-- Github link. TODO: replace placeholder URL. -->
             <span class="link-block">
-              <a href="https://github.com/K0uya/E3VS-BENCH" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
               <span>Code</span>
               </a>
             </span>
-
-              <!-- dataset link -->
-              <!-- <span class="link-block">
-                <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
-                    <span style="vertical-align: middle;">Dataset</span>
-                </a>
-              </span> -->
           </div>
         </div>
       </div>
@@ -130,16 +119,17 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser-->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <div class="content has-text-justified">
-          <p><b>TL;DR</b>: E3VS-Bench is a new benchmark for embodied 3D visual search that requires agents to actively control viewpoints in 6-DoF within photorealistic 3D Gaussian Splatting scenes
-             to gather viewpoint-dependent evidence for question answering.</p>
+          <p><b>TL;DR</b>: NavWAM turns navigation world-model future prediction into an action-producing policy.
+             It represents future egocentric observations, a goal-progress value, and an executable action chunk in a shared latent sequence,
+             and predicts them jointly in a single diffusion pass &mdash; navigating without CEM-style test-time trajectory optimization.</p>
             <p class="new-line"></p>
-          <img src="static/figures/teaser.png" alt="teaser" class="blend-img-background center-image" style="width: 100%; height: auto;">
+          <img src="static/figures/navwam/teaser.png" alt="NavWAM teaser: from external planning to joint world-action prediction" class="blend-img-background center-image" style="width: 100%; height: auto;">
         </div>
       </div>
     </div>
@@ -156,10 +146,12 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            E3VS-Bench is a benchmark designed to evaluate viewpoint-dependent active perception in realistic 3D environments.
-            The benchmark contains 99 photorealistic scenes reconstructed with 3D Gaussian Splatting and 2,014 question-driven episodes that require agents to actively search for visual evidence.
-            Unlike existing benchmarks that rely on static observations or limited motion, agents must plan viewpoints in 6-DoF to resolve occlusions, depth ambiguities, and hidden attributes.
-            Experiments with state-of-the-art VLMs reveal a large performance gap between models and humans, highlighting limitations in active perception and viewpoint planning.
+            Goal-conditioned visual navigation requires a robot to act under partial observability by anticipating how its motion will change the future egocentric view and whether that change brings it closer to the goal.
+            Navigation world models provide such visual foresight, but they remain prediction modules that require an external planner to convert predicted futures into closed-loop control.
+            We propose the <b>Navigation World Action Model (NavWAM)</b>, a diffusion-transformer policy that turns navigation world-model prediction into executable action by representing future observations, goal-progress values, and action chunks in a shared latent sequence.
+            By learning future prediction jointly with the action and value targets that determine closed-loop behavior, NavWAM makes visual foresight directly usable for robot control.
+            We build NavWAM through simulation pretraining and real-robot adaptation, and evaluate it on image-goal navigation against planning-based world models and a representative direct navigation policy.
+            Across offline benchmarks and closed-loop real-robot deployment, NavWAM improves over planning-based world-model baselines while using the default policy mode without CEM-style action search.
           </p>
         </div>
       </div>
@@ -175,19 +167,27 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">E3VS Dataset</h2>
+        <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="static/figures/samples_per_question_category.png" alt="Question Categories in Our Dataset" class="blend-img-background center-image">
+          <img src="static/figures/navwam/architecture.png" alt="NavWAM world-action latent canvas" class="blend-img-background center-image">
           <p class="new-line"></p>
           <p>
-          Our benchmark focuses on six question categories that broadly evaluate an agent's capability in active perception and spatial reasoning.
-          These categories test an agent's ability to 
-          (1) perform Object Search by locating specific items explicitly mentioned in the question, 
-          (2) recognize Object States by identifying conditions such as whether an object is open or closed, which requires the agent to navigate to a viewpoint where the state is clearly observable, 
-          (3) identify Object Attributes to discern physical characteristics and features, 
-          (4) conduct Context-guided Search to find objects based on their functional utility or situational context when the object name itself is not provided, 
-          (5) perform Spatial Reasoning to evaluate relative positions, and size relationships, 
-          and (6) perform Counting to quantify instances of a specific object class within the environment.
+            NavWAM represents goal-conditioned navigation as denoising a fixed nine-frame latent canvas built on the pretrained
+            <b>Cosmos&nbsp;Predict&nbsp;2 (2B)</b> video world model.
+            The bottom four frames are observed and condition the denoising process: a blank pad frame required by the causal VAE,
+            the current robot state, a goal frame (the target image in our image-goal setting), and the current egocentric observation.
+            The top five frames are generated as prediction targets: the executable action chunk, the future state,
+            two future egocentric observations, and the goal-progress value.
+            Following the latent-frame principle of Cosmos&nbsp;Policy, non-visual variables (state, action, value) are encoded
+            as latent frames rather than as separate output heads, so a single model jointly predicts visual and non-visual navigation variables.
+          </p>
+          <p>
+            A single set of weights is trained with three conditioning modes sampled per training sample &mdash; a
+            <b>policy</b> mode (50%) that predicts the action chunk, future state, future images, and value;
+            a <b>world-model</b> mode (25%) that additionally conditions on the action; and a
+            <b>value</b> mode (25%) that estimates goal progress.
+            At inference, NavWAM runs in its policy mode: it directly outputs an action chunk, executes it in a receding-horizon loop,
+            and re-queries the model &mdash; producing future-view and value predictions as interpretable foresight without any external planner.
           </p>
         </div>
       </div>
@@ -195,25 +195,36 @@
   </div>
 </section>
 
-
 <hr class="container is-max-desktop separator">
 
-<!-- Dataset Statistics -->
+<!-- Results: offline navigation -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">Dataset Statistics</h2>
+        <h2 class="title is-3">World Models as Policies</h2>
         <div class="content has-text-justified">
-          <img src="static/figures/combined_statistics_dense.png" alt="statistics of our proposed dataset" class="blend-img-background center-image">
-          <p class="new-line"></p>
           <p>
-            <strong>Dataset Statistics:</strong>
-          (a) question category distribution of unique QA pairs classified by GPT 5.1, 
-          (b) scene type distribution,
-          (c) the number of words in each question,
-          and (d) the number of words in each answer.
+            On <b>go&nbsp;stanford</b> image-goal navigation, NavWAM replaces NWM-style CEM planning with a single policy query.
+            Without in-domain fine-tuning it already reduces trajectory error over the CEM-based Cosmos&nbsp;Predict&nbsp;2 and NWM baselines,
+            and a short in-domain fine-tune (w/ FT) yields the best accuracy &mdash; all without CEM-style action search.
           </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+              <thead>
+                <tr><th>Method</th><th>ATE&nbsp;&darr;</th><th>RPE&nbsp;&darr;</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="has-text-left">Cosmos&nbsp;Predict&nbsp;2 + CEM</td><td>0.455</td><td>0.109</td></tr>
+                <tr><td class="has-text-left">NWM (CEM)</td><td>0.453</td><td>0.107</td></tr>
+                <tr><td class="has-text-left">NavWAM</td><td>0.324</td><td>0.099</td></tr>
+                <tr><td class="has-text-left"><b>NavWAM w/ FT</b></td><td><b>0.192</b></td><td><b>0.070</b></td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-7">Navigation performance on go&nbsp;stanford (lower is better).</p>
+          </div>
         </div>
       </div>
     </div>
@@ -222,18 +233,37 @@
 
 <hr class="container is-max-desktop separator">
 
+<!-- Results: foresight quality -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">E3VS Results</h2>
+        <h2 class="title is-3">Preserving Visual Foresight</h2>
         <div class="content has-text-justified">
-          <img src="static/figures/main_results_v2.png" alt="E3VS Results" class="blend-img-background center-image">
-          <p class="new-line"></p>
           <p>
-           We evaluate multiple state-of-the-art VLMs and compare their performance with humans. Despite strong 2D reasoning ability, 
-           all models exhibit a substantial gap from humans, revealing fundamental limitations in active perception and coherent viewpoint planning in real-world 3D environment
+            Turning a navigation world model into an action-producing policy does not compromise its future prediction.
+            NavWAM preserves visual foresight while predicting actions directly, improving subject consistency
+            (visual-feature similarity between predicted and ground-truth future observations) over NWM.
+            The qualitative example below shows the egocentric views observed during execution alongside the future views
+            predicted at each step, which remain consistent with the subsequent observations.
           </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-narrow">
+            <table class="table is-bordered is-striped is-narrow is-hoverable has-text-centered">
+              <thead>
+                <tr><th>Method</th><th>Subject Consistency&nbsp;&uarr;</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="has-text-left">NWM</td><td>0.524</td></tr>
+                <tr><td class="has-text-left"><b>NavWAM</b></td><td><b>0.668</b></td></tr>
+                <tr><td class="has-text-left">NavWAM w/ FT</td><td>0.635</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="content has-text-centered">
+          <img src="static/figures/navwam/realworld_foresight.png" alt="Observed egocentric views vs. predicted future views during execution" class="blend-img-background center-image">
         </div>
       </div>
     </div>
@@ -242,73 +272,172 @@
 
 <hr class="container is-max-desktop separator">
 
+<!-- Results: ablation + direct policy -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Learning Useful Futures for Control</h2>
+        <div class="content has-text-justified">
+          <p>
+            Future-image prediction alone is not sufficient for navigation, even with CEM over <i>N</i>=120 candidate actions.
+            Adding action and state supervision sharply improves trajectory accuracy, and adding goal-progress value supervision
+            yields the best results &mdash; it is the <i>joint</i> formulation, not any single prediction target, that makes foresight usable for control.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-three-quarters">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+              <thead>
+                <tr>
+                  <th colspan="4">Supervised targets</th>
+                  <th rowspan="2">Inference</th>
+                  <th colspan="2">ATE&nbsp;&darr;</th>
+                  <th colspan="2">RPE&nbsp;&darr;</th>
+                </tr>
+                <tr>
+                  <th>Img.</th><th>Act.</th><th>St.</th><th>Val.</th>
+                  <th>h=4</th><th>h=8</th><th>h=4</th><th>h=8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>&#10003;</td><td></td><td></td><td></td><td>planning</td><td>0.326</td><td>0.569</td><td>0.133</td><td>0.135</td></tr>
+                <tr><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td></td><td>policy</td><td>0.107</td><td>0.287</td><td>0.054</td><td>0.098</td></tr>
+                <tr><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>policy</td><td><b>0.076</b></td><td><b>0.192</b></td><td><b>0.037</b></td><td><b>0.070</b></td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-7">Head ablation of NavWAM on go&nbsp;stanford.</p>
+          </div>
+        </div>
 
-<section class="section hero"></section>
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            Against the direct vision-language-action policy <b>OmniVLA</b> on the held-out <b>sit</b> benchmark,
+            NavWAM attains lower ATE and slightly higher success rate at both horizons &mdash; using a 2B-parameter video backbone,
+            versus OmniVLA's 7B-parameter VLA backbone &mdash; while additionally producing future-view and value predictions.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+              <thead>
+                <tr><th rowspan="2">Method</th><th colspan="2">ATE&nbsp;&darr;</th><th colspan="2">SR&nbsp;(%)&nbsp;&uarr;</th></tr>
+                <tr><th>h=4</th><th>h=8</th><th>h=4</th><th>h=8</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="has-text-left">OmniVLA (7B)</td><td>0.086</td><td>0.162</td><td>45.4</td><td>12.1</td></tr>
+                <tr><td class="has-text-left"><b>NavWAM (2B)</b></td><td><b>0.077</b></td><td><b>0.144</b></td><td><b>46.3</b></td><td><b>15.9</b></td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-7">Direct-policy comparison on sit (zero-shot).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container is-max-desktop separator">
+
+<!-- Real-world -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Closed-loop Real-Robot Deployment</h2>
+        <div class="content has-text-justified">
+          <p>
+            We deploy NavWAM and two baselines on a <b>Diablo</b> mobile robot across 24 closed-loop image-goal episodes
+            in four indoor environments. NavWAM reaches the goal in <b>19/24</b> episodes (79.2%), compared with 14/24 (58.3%)
+            for OmniVLA and 4/24 (16.7%) for NWM. Representative rollouts show NavWAM reaching the goal region more consistently,
+            while NWM often drifts and OmniVLA sometimes stops short or follows less direct paths.
+          </p>
+          <img src="static/figures/navwam/qualitative_realworld.png" alt="Real-world rollouts of NavWAM, NWM, and OmniVLA across four indoor environments" class="blend-img-background center-image">
+          <p class="new-line"></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-three-quarters">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+              <thead>
+                <tr><th>Method</th><th>Office</th><th>Storage</th><th>Meeting</th><th>Hallway</th><th>SR&nbsp;(%)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="has-text-left">NWM</td><td>1/8</td><td>0/6</td><td>1/6</td><td>2/4</td><td>16.7</td></tr>
+                <tr><td class="has-text-left">OmniVLA</td><td>4/8</td><td>4/6</td><td>3/6</td><td><b>3/4</b></td><td>58.3</td></tr>
+                <tr><td class="has-text-left"><b>NavWAM (Ours)</b></td><td><b>6/8</b></td><td><b>6/6</b></td><td><b>4/6</b></td><td><b>3/4</b></td><td><b>79.2</b></td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-7">Per-environment success rate (SR@1m) over 24 closed-loop episodes.</p>
+          </div>
+        </div>
+
+        <div class="columns is-centered" style="margin-top: 1rem;">
+          <div class="column is-half has-text-centered">
+            <img src="static/figures/navwam/robot_platform.png" alt="Diablo robot platform" class="blend-img-background center-image" style="max-height: 360px; width: auto;">
+            <p class="is-size-7">Robot platform: a Diablo base with a RealSense D455, a Livox Mid-360, and an NVIDIA Jetson AGX Orin.</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <img src="static/figures/navwam/value.png" alt="Predicted goal-progress value over a real-robot rollout" class="blend-img-background center-image" style="max-height: 360px; width: auto;">
+            <p class="is-size-7">Predicted goal-progress value over a single-pass real-robot rollout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container is-max-desktop separator">
+
+<!-- Qualitative video carousel -->
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">Qualitative Results</h2>
+        <p class="is-size-6"><i>Real-robot rollout videos &mdash; to be added.</i></p>
       <div class="custom_slider w-slider" data-autoplay="true" data-duration="800">
-        <!-- スライドを包むマスクエリア -->
+        <!-- Slide mask -->
         <div class="mask w-slider-mask" id="w-slider-mask-0">
-          
-          <!-- 各スライド -->
-          <div class="slide w-slide" aria-label="2 of 9" role="group">
+
+          <!-- TODO(author): drop real-robot rollout mp4s into static/videos/navwam/ with these names. -->
+          <div class="slide w-slide" role="group">
             <div class="div-block-9">
               <div class="video_class w-embed">
                 <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep140.mp4" type="video/mp4">
+                  <source src="static/videos/navwam/rollout1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
           </div>
 
-          <div class="slide w-slide" aria-label="3 of 9" role="group">
+          <div class="slide w-slide" role="group">
             <div class="div-block-9">
               <div class="video_class w-embed">
                 <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep170.mp4" type="video/mp4">
+                  <source src="static/videos/navwam/rollout2.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
           </div>
-          <div class="slide w-slide" aria-label="4 of 9" role="group">
+
+          <div class="slide w-slide" role="group">
             <div class="div-block-9">
               <div class="video_class w-embed">
                 <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep201.mp4" type="video/mp4">
+                  <source src="static/videos/navwam/rollout3.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
           </div>
-          <div class="slide w-slide" aria-label="5 of 9" role="group">
+
+          <div class="slide w-slide" role="group">
             <div class="div-block-9">
               <div class="video_class w-embed">
                 <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep233.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="slide w-slide" aria-label="6 of 9" role="group">
-            <div class="div-block-9">
-              <div class="video_class w-embed">
-                <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep263.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="slide w-slide" aria-label="7 of 9" role="group">
-            <div class="div-block-9">
-              <div class="video_class w-embed">
-                <video width="100%" height="auto" muted controls loop preload="metadata">
-                  <source src="static/videos/output_ep335.mp4" type="video/mp4">
+                  <source src="static/videos/navwam/rollout4.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -329,22 +458,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
-      <!-- @misc{2026e3vs,
-        title={E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes}, 
-        author={},
-        year={2026},
-        eprint={},
-      } -->
-      @misc{sakamoto2026e3vsbench,
-            title={E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes}, 
-            author={Koya Sakamoto and Taiki Miyanishi and Daichi Azuma and Shuhei Kurita and Shu Morikuni and Naoya Chiba and Motoaki Kawanabe and Yusuke Iwasawa and Yutaka Matsuo},
-            year={2026},
-            eprint={2604.17969},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV},
-            url={https://arxiv.org/abs/2604.17969}, 
-      }
+    <pre><code>@misc{azuma2026navwam,
+      title={NavWAM: A Navigation World Action Model for Goal-Conditioned Visual Navigation},
+      author={Daichi Azuma and Taiki Miyanishi and Koya Sakamoto and Shuhei Kurita and Yaonan Zhu and Petr Khrapchenkov and Motoaki Kawanabe and Yusuke Iwasawa and Yutaka Matsuo},
+      year={2026},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={},
+}
     </code></pre>
   </div>
 </section>
@@ -358,41 +480,41 @@
 </script>
 
 <script>
-  let currentSlide = 0; // 現在のスライドのインデックス
-  const slides = document.querySelectorAll('.w-slide'); // 全スライドを取得
-  const totalSlides = slides.length; // スライドの総数
+  let currentSlide = 0; // current slide index
+  const slides = document.querySelectorAll('.w-slide'); // all slides
+  const totalSlides = slides.length; // number of slides
 
-  const sliderMask = document.getElementById('w-slider-mask-0'); // マスク部分を取得
+  const sliderMask = document.getElementById('w-slider-mask-0'); // slider mask
 
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides; // 次のスライドに移動
+    currentSlide = (currentSlide + 1) % totalSlides; // next slide
     updateSlidePosition();
   }
 
   function previousSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // 前のスライドに移動
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // previous slide
     updateSlidePosition();
   }
 
   function updateSlidePosition() {
     const newTransformValue = `translateX(-${currentSlide * 100}%)`;
-    sliderMask.style.transform = newTransformValue; // スライド位置を更新
-    
-    // すべての動画を一時停止してリセット
+    sliderMask.style.transform = newTransformValue; // update slide position
+
+    // pause and reset all videos
     const allVideos = document.querySelectorAll('.w-slide video');
     allVideos.forEach(video => {
       video.pause();
       video.currentTime = 0;
     });
-    
-    // 現在のスライドの動画を再生
+
+    // play current slide's video
     const currentVideo = slides[currentSlide].querySelector('video');
     if (currentVideo) {
       currentVideo.currentTime = 0;
       currentVideo.play();
     }
-    
-    updateDots(); // ドットの状態を更新
+
+    updateDots(); // update dots
   }
 
   function createDots() {
@@ -401,8 +523,8 @@
       const dot = document.createElement('div');
       dot.classList.add('dot');
       dot.addEventListener('click', () => {
-        currentSlide = i; // クリックされたインデックスを設定
-        updateSlidePosition(); // スライドを更新
+        currentSlide = i; // set clicked index
+        updateSlidePosition(); // update slide
       });
       dotsContainer.appendChild(dot);
     }
@@ -415,21 +537,21 @@
     });
   }
 
-  // 初期化
+  // init
   createDots();
   updateDots();
-  
-  // 最初の動画を再生
+
+  // play the first video
   const firstVideo = slides[0].querySelector('video');
   if (firstVideo) {
     firstVideo.currentTime = 0;
     firstVideo.play();
   }
-  
-  // 自動再生の設定（10秒ごとに次のスライドへ）
+
+  // auto-advance every 10 seconds
   setInterval(() => {
     nextSlide();
-  }, 10000); // 10000ms = 10秒
+  }, 10000); // 10000ms = 10s
 </script>
 
 
@@ -460,7 +582,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
