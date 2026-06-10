@@ -248,20 +248,6 @@
             predicted at each step, which remain consistent with the subsequent observations.
           </p>
         </div>
-        <div class="columns is-centered">
-          <div class="column is-narrow">
-            <table class="table is-bordered is-striped is-narrow is-hoverable has-text-centered">
-              <thead>
-                <tr><th>Method</th><th>Subject Consistency&nbsp;&uarr;</th></tr>
-              </thead>
-              <tbody>
-                <tr><td class="has-text-left">NWM</td><td>0.524</td></tr>
-                <tr><td class="has-text-left"><b>NavWAM</b></td><td><b>0.668</b></td></tr>
-                <tr><td class="has-text-left">NavWAM w/ FT</td><td>0.635</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         <div class="content has-text-centered">
           <img src="static/figures/navwam/realworld_foresight.png" alt="Observed egocentric views vs. predicted future views during execution" class="blend-img-background center-image">
         </div>
@@ -282,7 +268,8 @@
           <p>
             Future-image prediction alone is not sufficient for navigation, even with CEM over <i>N</i>=120 candidate actions.
             Adding action and state supervision sharply improves trajectory accuracy, and adding goal-progress value supervision
-            yields the best results &mdash; it is the <i>joint</i> formulation, not any single prediction target, that makes foresight usable for control.
+            yields the best results. Conversely, removing future-image supervision from the full model (action, state, and value only)
+            also degrades accuracy &mdash; so it is the <i>joint</i> formulation, not any single prediction target, that makes foresight usable for control.
           </p>
         </div>
         <div class="columns is-centered">
@@ -303,6 +290,7 @@
               <tbody>
                 <tr><td>&#10003;</td><td></td><td></td><td></td><td>planning</td><td>0.326</td><td>0.569</td><td>0.133</td><td>0.135</td></tr>
                 <tr><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td></td><td>policy</td><td>0.107</td><td>0.287</td><td>0.054</td><td>0.098</td></tr>
+                <tr><td></td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>policy</td><td>0.090</td><td>0.262</td><td>0.045</td><td>0.103</td></tr>
                 <tr><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td><td>policy</td><td><b>0.076</b></td><td><b>0.192</b></td><td><b>0.037</b></td><td><b>0.070</b></td></tr>
               </tbody>
             </table>
@@ -312,25 +300,10 @@
 
         <div class="content has-text-justified" style="margin-top: 1.5rem;">
           <p>
-            Against the direct vision-language-action policy <b>OmniVLA</b> on the held-out <b>sit</b> benchmark,
-            NavWAM attains lower ATE and slightly higher success rate at both horizons &mdash; using a 2B-parameter video backbone,
+            NavWAM also remains competitive with the direct vision-language-action policy <b>OmniVLA</b> on the held-out <b>sit</b> benchmark,
+            attaining lower ATE and slightly higher success rate at both horizons &mdash; using a 2B-parameter video backbone,
             versus OmniVLA's 7B-parameter VLA backbone &mdash; while additionally producing future-view and value predictions.
           </p>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
-              <thead>
-                <tr><th rowspan="2">Method</th><th colspan="2">ATE&nbsp;&darr;</th><th colspan="2">SR&nbsp;(%)&nbsp;&uarr;</th></tr>
-                <tr><th>h=4</th><th>h=8</th><th>h=4</th><th>h=8</th></tr>
-              </thead>
-              <tbody>
-                <tr><td class="has-text-left">OmniVLA (7B)</td><td>0.086</td><td>0.162</td><td>45.4</td><td>12.1</td></tr>
-                <tr><td class="has-text-left"><b>NavWAM (2B)</b></td><td><b>0.077</b></td><td><b>0.144</b></td><td><b>46.3</b></td><td><b>15.9</b></td></tr>
-              </tbody>
-            </table>
-            <p class="is-size-7">Direct-policy comparison on sit (zero-shot).</p>
-          </div>
         </div>
       </div>
     </div>
@@ -354,21 +327,6 @@
           </p>
           <img src="static/figures/navwam/qualitative_realworld.png" alt="Real-world rollouts of NavWAM, NWM, and OmniVLA across four indoor environments" class="blend-img-background center-image">
           <p class="new-line"></p>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-three-quarters">
-            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
-              <thead>
-                <tr><th>Method</th><th>Office</th><th>Storage</th><th>Meeting</th><th>Hallway</th><th>SR&nbsp;(%)</th></tr>
-              </thead>
-              <tbody>
-                <tr><td class="has-text-left">NWM</td><td>1/8</td><td>0/6</td><td>1/6</td><td>2/4</td><td>16.7</td></tr>
-                <tr><td class="has-text-left">OmniVLA</td><td>4/8</td><td>4/6</td><td>3/6</td><td><b>3/4</b></td><td>58.3</td></tr>
-                <tr><td class="has-text-left"><b>NavWAM (Ours)</b></td><td><b>6/8</b></td><td><b>6/6</b></td><td><b>4/6</b></td><td><b>3/4</b></td><td><b>79.2</b></td></tr>
-              </tbody>
-            </table>
-            <p class="is-size-7">Per-environment success rate (SR@1m) over 24 closed-loop episodes.</p>
-          </div>
         </div>
 
         <div class="columns is-centered" style="margin-top: 1rem;">
